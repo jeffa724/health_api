@@ -8,7 +8,7 @@ app = FastAPI()
 
 model = XGBClassifier()
 model.load_model("xgboost_model.json")
-preprocessor = joblib.load("preprocessor.joblib")
+# preprocessor = joblib.load("preprocessor.joblib")
 
 LABEL_MAP = {0: "Normal", 1: "Abnormal", 2: "Inconclusive"}
 
